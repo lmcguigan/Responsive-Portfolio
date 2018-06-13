@@ -1,0 +1,294 @@
+h1 {
+    color: #ffffff;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+h2 {
+    color: #4aaaa5;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+/* NAVBAR - My leftside contains the namebox, the rightside has the list of pages*/
+
+#navbar {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border-bottom: 1.5px solid #cccccc;
+}
+
+#leftside {
+    margin-left: 53px;
+}
+
+#namebox {
+    text-align: center;
+    justify-content: center;
+    background-color: #4aaaa5;
+    padding: 30px;
+    width: 250px;
+}
+
+#rightside {
+    margin-right: 53px;
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    color: #777777;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 17px;
+    float: left;
+    margin-left: 10px;
+    padding-right: 10px;
+    border-right: 1px solid lightgrey;
+}
+
+li.lastitem {
+    border-right: none;
+}
+
+li a {
+    color: #777777;
+    text-decoration: none;
+}
+
+/*Body*/
+
+p {
+    color: #777777;
+    font-size: 17px;
+    line-height: 2;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+#topspace{
+    padding-top: 17px;
+}
+#mainsection {
+    background: url('../images/new_year_background.png');
+    position: absolute;
+    width: 100%;
+    padding-bottom: 200px;
+}
+
+#contentbox {
+    background-color: #ffffff;
+    border: 1px solid #e2e2e2;
+    margin-left: 53px;
+    margin-right: 34%;
+    width: 66.6666%;
+    margin-top: 40px;
+    margin-bottom: 25%;
+    padding: 40px 20px 20px;
+}
+
+hr {
+    border: 1.5px solid #e2e2e2;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/*About Section*/
+
+#abouttext {
+    margin-top: -7px;
+}
+
+/* FOOTER */
+
+#footertext {
+    color: #e2e2e2;
+    font-size: 9px;
+    padding-bottom: 3px;
+}
+
+#footer {
+    background-color: #666666;
+    border-top: 5px solid #4aaaa5;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    float: left;
+    margin-right: 20px;
+}
+img.photo {
+    float: left;
+    margin-right: 20px;
+}
+
+/*Contact Page & Form Styles*/
+
+input {
+    margin-top: 8px;
+    margin-bottom: 20px;
+    padding: 8px;
+    font-size: 14px;
+    box-sizing: border-box;
+    border: 0.5px solid #e2e2e2;
+    width: 100%;
+}
+
+input[type=submit] {
+    background-color: #4aaaa5;
+    color: white;
+    font-size: 17px;
+    border: none;
+    padding: 8px 30px 12px;
+    width: auto;
+}
+
+textarea {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    height: 198px;
+    max-width: 100%;
+    border: 0.5px solid #e2e2e2;
+}
+
+form {
+    margin-top: -1px;
+}
+
+.form {
+    line-height: 1;
+}
+
+/*Portfolio Page Styles*/
+.item-left{
+    width: 48%;
+    position: relative;
+    margin-top: 30px;
+}
+.item-right{
+    width: 48%;
+    position: relative;
+    margin-top: 30px;
+}
+.flexbox{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.img-responsive {
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    border-style: none;
+}
+.innerbanner{
+    position: absolute;
+    bottom: 10px;
+    background-color: #4aaaa5;
+    color: white;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    text-align: center;
+    font-size: 22px;
+    padding: 20px;
+    width: -webkit-fill-available;
+}
+
+.portfolioitem {
+    margin: 10px 0px 10px;
+    position: relative;
+}
+
+/*Link Effects*/
+
+a:hover {
+    opacity: 0.5;
+}
+
+/*Responsive Design*/
+
+@media screen and (min-height: 732px) {
+    #mainsection {
+        height: 100vh;
+    }
+}
+
+/*Note: Media query for 980px not needed because my original design was responsive*/
+@media screen and (max-width:980px) {
+
+}
+
+@media screen and (max-width:768px) {
+    #contentbox {
+        margin-left: 20px;
+        margin-right: 20px;
+        width: auto;
+    }
+    #leftside {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width:640px) {
+    /*Stack the Namebox Over Nav Items*/
+    #navbar {
+        position: static;
+        display: inline;
+    }
+    #leftside {
+        background-color: #4aaaa5;
+        margin: 0 auto;
+    }
+    #namebox {
+        margin: 0 auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    #rightside {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        margin-right: 0;
+        margin-left: 0;
+        border-bottom: 1.5px solid #cccccc;
+    }
+    #contentbox{
+        margin-top: 20px;
+    }
+    img.photo{
+        width:100%;
+        float:none;
+    }
+    #abouttext{
+        margin-top: 15px;
+    }
+    .innerbanner{
+        margin-right: 0;
+    }
+    .flexbox{
+        flex-direction: column;
+    }
+    .item-left{
+        padding: 0px;
+        width: 100%;
+    }
+    .item-right{
+        padding: 0px;
+        width: 100%;
+    }
+}
